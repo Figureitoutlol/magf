@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Quote Cycle</title>
+    <style>
+        .scrabble {
+            display: inline-block;
+            margin: 10px;
+            font-size: 24px;
+            color: #4CAF50;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <span class="scrabble"><span>Happy</span></span>
+    <span class="scrabble"><span>Birthday</span></span>
+    <span class="scrabble"><span>My</span></span>
+    <span class="scrabble"><span>Beautiful</span></span>
+    <span class="scrabble"><span>Girlfriend!</span></span>
+</body>
+</html>
