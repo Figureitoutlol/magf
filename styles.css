@@ -36,7 +36,7 @@ body {
   --x: -50%;
   --initialY: 60vmin;
   content: "";
-  animation: firework 2s infinite;
+  animation: firework 4s infinite;
   position: absolute;
   top: 50%;
   left: 50%;
