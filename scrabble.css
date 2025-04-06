@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pri-bg-color: #ffffff;
+  --pri-txt-color: #000000;
+}
+
+html {
+  color-scheme: light dark;
+  height: 100%;
+  min-height: 100vh;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.holder {
+  background-color: #b77d5e;
+  background-image: repeating-radial-gradient(
+    circle,
+    transparent,
+    #eab99e 50%,
+    #eab99e 100%
+  );
+  background-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.666rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0.125rem black inset;
+}
+
+.tile {
+  width: 4.5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.25rem;
+  background-color: rgb(235, 222, 166);
+  box-shadow: -0.2em -0.125em 0.125em rgba(0, 0, 0, 0.25),
+    0 0 0 0.04em rgba(233, 184, 101, 0.3),
+    0.02em 0.02em 0.02em rgba(0, 0, 0, 0.4) inset,
+    -0.05em -0.05em 0.02em rgba(255, 255, 255, 0.8) inset;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.125s ease;
+  position: relative;
+}
+
+.tile .letter {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.5rem;
+  color: #333333;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.tile .value {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  position: absolute;
+  left: 80%;
+  top: 80%;
+
+  transform: translateY(-50%);
+  z-index: 8;
+}
